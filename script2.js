@@ -25,7 +25,7 @@ function logando () {
 
         }).then(resposta => {
             localStorage.setItem("usuarioLogadoGrowdev", JSON.stringify(resposta.data.usuario));
-            window.location.href = "index3.html";
+            window.location.href = "recados.html";
 
         }) .catch((err) => {
             alert(err.response.data)

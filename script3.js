@@ -29,7 +29,7 @@ function salvarRecado (event) {
 }
 
 function paginaInicial () {
-    window.location.href = "index2.html";
+    window.location.href = "index.html";
 }
 
 function listarRecados () {
