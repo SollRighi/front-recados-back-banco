@@ -1,5 +1,5 @@
 // const urlDoBack = "http://localhost:8000"; //rodando local
-const urlDoBack = "https://back-recados.herokuapp.com/"; //rodando heroku
+const urlDoBack = "https://back-recados.herokuapp.com"; //rodando heroku
 
 function entrar() {
     let login = document.getElementById("login");
