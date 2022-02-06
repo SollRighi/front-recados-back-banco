@@ -105,12 +105,13 @@ function editarRecado (recado) {
 
     }).then((res) => {
         alert(res.data)
-
+        listarRecados();
+        
     }).catch((err) => {
         alert(err.response.data)
     })
 
-    listarRecados();
+    
 }
 
 
