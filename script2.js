@@ -45,6 +45,7 @@ function cadastrar() {
     document.getElementById("senhaConfirmacaoCadastro").value = ""; 
 }
 
+
 entrar();
 
 function criarNovoUsuario () {
