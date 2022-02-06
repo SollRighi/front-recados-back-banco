@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title> Login </title>
+</head>
+<body>
+    <div class="mae1">
+
+        <div class="imagem">
+            <img src="../estrada.jpg" height="100%" width="100%">
+        </div>
+
+        <div class="login" id="login">
+            <h1> Entrar no Sistema de Recados </h1>
+
+            <form style="display: flex;">
+                <div class="mb-3" style="width: 300px;">
+                  <input type="email" placeholder="User name" class="form-control" id="userNameLogin" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3" style="width: 300px;">
+                  <input type="password" placeholder="Password" class="form-control" id="senhaLogin">
+                </div>
+            </form>
+            <button type="submit" style="width: 600px;" class="btn btn-primary" onclick="logando()" > ENTRAR </button>
+            <button type="submit" style="width: 600px;" class="btn btn-light" onclick="cadastrar()"> CADASTRAR </button>
+        </div>
+
+        <div class="cadastro" id="cadastro">
+            <h1 id="titulo2"> Criar Conta </h1>
+            
+            <form style="display: flex; flex-direction: column;">
+                <div class="mb-3" style="width: 300px;">
+                  <input type="email" placeholder="User name" class="form-control" id="userNameCadastro" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3" style="width: 300px;">
+                  <input type="password" placeholder="Password" class="form-control" id="senhaCadastro">
+                </div>
+                <div class="mb-3" style="width: 300px;">
+                  <input type="password" placeholder="Repeat Password" class="form-control" id="senhaConfirmacaoCadastro">
+                </div>
+            </form>
+            <button type="submit" style="width: 600px;" class="btn btn-primary" onclick="criarNovoUsuario()" > CRIAR CONTA AGORA </button>
+            <button type="submit" style="width: 600px;" class="btn btn-light" onclick="entrar()"> VOLTAR </button>
+        </div>
+
+        <div></div>
+
+    </div>
+<script src="script2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

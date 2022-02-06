@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title> Recados </title>
+</head>
+<body>
+    <div class="pai">
+        
+        <div id="meusRecados"> 
+            <h1 > Meus Recados </h1> 
+            <button type="submit" style="width: 100px;" class="btn btn-primary" onclick="paginaInicial()" > Sair </button>
+        </div>
+
+        <div id="divFormulario">  
+            <form style="display: flex; align-items: center;">
+                <div style="width: 400px;">
+                  <input type="text" placeholder="Descrição" class="form-control" id="descricao" >
+                </div>
+                <div style="width: 600px;">
+                  <input type="text" placeholder="Detalhamento" class="form-control" id="detalhamento">
+                </div>
+                <button type="submit" style="width: 100px;" class="btn btn-primary" onclick="salvarRecado(event)"> Salvar </button>
+            </form>
+            
+        </div>
+
+        <div id="divTable">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Detalhamento</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead> 
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+
+        </div>
+        
+        
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div> </div>
+       
+    </div>
+
+
+
+
+
+    <script src="script3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
