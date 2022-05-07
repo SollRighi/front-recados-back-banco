@@ -1,6 +1,6 @@
 let usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogadoGrowdev"));
 // const urlDoBack = "http://localhost:8000"; //rodando local
-const urlDoBack = "https://back-recados.herokuapp.com"; //rodando heroku
+const urlDoBack = "https://fierce-fortress-03651.herokuapp.com"; //rodando heroku
 
 function salvarRecado (event) {
     event.preventDefault();
